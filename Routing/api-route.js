@@ -40,6 +40,6 @@ Router.delete('/api/notes/:id',(req,res)=>{
     })
     fs.writeFileSync("db/db.json",JSON.stringify(newNotes))
     res.json("Note Deleted Successfully")
-
+    
 })
 module.exports =Router;

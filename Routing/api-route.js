@@ -5,8 +5,8 @@ const {v4 : uuidv4}=require('uuid')
 const path =require('path') 
 
 
-Router.get('/', (req,res)=>{
-   res.sendFile(path.join(__dirname ,'./db/db.json'));
+Router.get('/api/notes', (req,res)=>{
+   res.sendFile(path.join(__dirname ,'../db/db.json'));
 })
 
 Router.post('/api/notes',(req,res)=>{
@@ -35,17 +35,11 @@ res.status(200).json(rawfile)
 Router.delete('/api/notes/:id',(req,res)=>{
     let data =fs.readFileSync("db/db.json","utf8")
     const jsondata =JSON.parse(data)
-    const newNotes =jsondata.filtera((note)=>{
+    const newNotes =jsondata.filter((note)=>{
         return note.id !==req.params.id;
     })
     fs.writeFileSync("db/db.json",JSON.stringify(newNotes))
     res.json("Note Deleted Successfully")
-    // const jsonfile =require('./db/db.json')
-    // const id =req.params.id;
-    // const newNotes =jsonfile.filter((note)=>{
-    //     note.id!==id;
-    // })
-    // jsonfile.splice(id,1)
-    // res.json(newNotes)
+
 })
 module.exports =Router;

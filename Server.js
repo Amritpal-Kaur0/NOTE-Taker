@@ -19,6 +19,6 @@ const api_routes =require('./Routing/html-route.js')
 app.use(api_routes)
 
 //Listening Port
-app.listen(PORT,()=>{
+app.listen(process.env.PORT,3000,()=>{
     console.log(`You are listening the server At http://localhost:${PORT}`)
 })

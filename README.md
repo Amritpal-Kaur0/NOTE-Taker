@@ -1,4 +1,4 @@
-#  Note Taker
+#  NOTE- Taker
 
 
 # ![License](https://img.shields.io/badge/license-MIT-Orange)

@@ -14,6 +14,11 @@
 
 ## Description
 This is a simple note-taking application built using Express.js, a fast and minimalist web framework for Node.js. The app allows users to create, view and delete notes, providing a convenient way to organize and manage their thoughts and ideas.
+![Note Taker](https://github.com/Amritpal-Kaur0/NOTE-Taker/assets/128442182/daeb4ff4-5389-4a75-8ed5-42e36d0a6739)
+![Note Taker (1)](https://github.com/Amritpal-Kaur0/NOTE-Taker/assets/128442182/412aa906-9ebf-4bd9-97bc-5c827ff46d1b)
+
+Deployed Website  -https://amrit-note-taker.herokuapp.com/
+
 
 ## Installation
 * Clone the Repositort from GitHub.

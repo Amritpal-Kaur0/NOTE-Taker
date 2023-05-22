@@ -1,7 +1,7 @@
 //Dependencies
 const express =require ('express');
 const app =express();
-const  PORT = process.env.PORT ||3000;
+const  port = process.env.PORT ||3000;
 
  //express app to handle data parsing
  //parse applicattion/parse
@@ -19,6 +19,6 @@ const api_routes =require('./Routing/html-route.js')
 app.use(api_routes)
 
 //Listening Port
-app.listen(PORT,()=>{
+app.listen(port,()=>{
     console.log(`You are listening the server At http://localhost:${PORT}`)
 })

@@ -20,5 +20,5 @@ app.use(api_routes)
 
 //Listening Port
 app.listen(port,()=>{
-    console.log(`You are listening the server At http://localhost:${PORT}`)
+    console.log(`You are listening the server At http://localhost:${port}`)
 })

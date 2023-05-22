@@ -8,7 +8,7 @@ const path =require('path')
 Router.get('/api/notes', (req,res)=>{
    res.sendFile(path.join(__dirname ,'../db/db.json'));
 })
-
+//posting stuff in the database(.json)file
 Router.post('/api/notes',(req,res)=>{
     console.log("Request recieved at /notes")
     const newData ={
@@ -31,7 +31,7 @@ fs.writeFileSync('./db/db.json',JSON.stringify(rawfile),(err)=>{
 res.status(200).json(rawfile)
 
 });
-
+//Bonus points to add deleting functionality
 Router.delete('/api/notes/:id',(req,res)=>{
     let data =fs.readFileSync("db/db.json","utf8")
     const jsondata =JSON.parse(data)
